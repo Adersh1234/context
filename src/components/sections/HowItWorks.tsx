@@ -51,8 +51,11 @@ export function HowItWorks() {
         <div className="mx-auto max-w-6xl">
           <div>
             <div className="flex flex-col gap-4 md:gap-6">
-              <p className="text-sm uppercase tracking-wider text-cyan font-medium mb-4">
+              <p className="text-sm uppercase tracking-wider text-cyan font-medium">
                 {copy.howItWorks.eyebrow}
+              </p>
+              <p className="mt-2 text-white/40 text-lg max-w-lg leading-relaxed mb-6">
+                {copy.howItWorks.subhead}
               </p>
               {copy.howItWorks.steps.map((step) => (
                 <StepCard key={step.number} step={step} />

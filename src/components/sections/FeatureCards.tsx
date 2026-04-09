@@ -21,6 +21,9 @@ export function FeatureCards() {
               <h2 id="features-heading" className="text-h2 text-white">
                 {copy.features.eyebrow}
               </h2>
+              <p className="mt-4 text-lg text-white/50 max-w-xl mx-auto leading-relaxed">
+                {copy.features.subhead}
+              </p>
             </div>
           </FadeInView>
 

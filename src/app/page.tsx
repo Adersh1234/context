@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { FeatureCards } from "@/components/sections/FeatureCards";
+import { VeAttention } from "@/components/sections/VeAttention";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Privacy } from "@/components/sections/Privacy";
 import { FinalCTA } from "@/components/sections/FinalCTA";
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <FeatureCards />
+        <VeAttention />
         <HowItWorks />
         <Privacy />
         <FinalCTA />

@@ -1,57 +1,59 @@
 export const copy = {
   hero: {
     badge: "🧠 Screen memory for professionals",
-    h1Line1: "Your work.",
-    h1Line2: "Recalled in seconds.",
+    h1Line1: "Give your work",
+    h1Line2: "a memory.",
     subhead:
-      "Ve runs quietly in the background. So when you need to find something, anything you've seen, read, or worked on, it's already there.",
+      "Ve runs quietly in the background, watching what you work on, recalling what you've seen, so you never lose anything again.",
     cta: "Get Ve Free",
     ctaLink: "#download",
     trustChips: ["No credit card", "Mac app", "Free forever"],
     privacyLine: "Ve never records video. Your screen stays private.",
   },
   features: {
-    eyebrow: "What Ve does",
+    eyebrow: "Better recall. Better work.",
+    subhead: "Ve learns from everything on your screen, so you can find anything and pick up exactly where you left off.",
     cards: [
       {
-        title: "Find anything you've seen",
-        body: "That tab you closed. That stat you scrolled past. That decision from last week. Ve remembers what you saw — even when you don't.",
+        title: "Recall everything you've seen",
+        body: "Find anything in seconds. That tab you closed. That number you scrolled past. That message you half-read. Ve already has it.",
         icon: "eye" as const,
       },
       {
-        title: "See how everything connects",
-        body: "Ve understands how a doc you edited, a message you read, and a file you opened all relate to the same thing. Not just recall. Context.",
+        title: "See how it all connects",
+        body: "Ve understands how a Slack thread, a doc you edited, and a screen you opened all point to the same thing.",
         icon: "connections" as const,
       },
       {
-        title: "Search in plain language",
-        body: 'No folders. No filenames. No digging. Just ask — "what was that pricing doc I saw Tuesday?" — and Ve finds it.',
+        title: "Search without searching",
+        body: 'No folders. No filenames. Just ask, "what was that thing I saw Tuesday?" and Ve finds it instantly.',
         icon: "search" as const,
       },
       {
-        title: "Your screen. Your memory.",
-        body: "Ve never records video. It reads what's on your active screen, quietly and privately. You stay in control of what it sees — always.",
+        title: "Never lose context again",
+        body: "Switch tasks, close tabs, finish calls. Ve holds your context so you don't have to.",
         icon: "shield" as const,
       },
     ],
   },
   howItWorks: {
-    eyebrow: "How it works",
+    eyebrow: "How Ve works",
+    subhead: "Ve gets smarter every day, learning to stay one step ahead of your work.",
     steps: [
       {
         number: 1,
-        title: "Starts the moment you install",
-        body: "Ve runs silently across every app. No setup. No integrations. No tagging.",
+        title: "Starts working immediately",
+        body: "Ve runs quietly in the background across every app. No setup. No integrations needed.",
       },
       {
         number: 2,
-        title: "Builds your memory over time",
-        body: "Every screen, every session — Ve connects the dots so your context grows with you.",
+        title: "Ve gets to know your work",
+        body: "It builds a private memory, learns your patterns, and connects the dots, so it's always caught up.",
       },
       {
         number: 3,
-        title: "You recall everything",
-        body: "Ask Ve anything about your work. It already knows.",
+        title: "You get more done",
+        body: "Ask Ve anything about your work. Get answers grounded in what you've actually seen and done, not generic AI guesses.",
       },
     ],
   },
@@ -59,6 +61,6 @@ export const copy = {
     h2: "Stop losing things you've already seen.",
     cta: "Get Ve Free",
     ctaLink: "#download",
-    sub: "Mac app. 2 minutes to install.",
+    sub: "",
   },
 };
