@@ -1,66 +1,39 @@
 export const copy = {
   hero: {
-    badge: "🧠 Screen memory for professionals",
-    h1Line1: "Give your work",
-    h1Line2: "a memory.",
+    h1Line1: "Stop hunting for things",
+    h1Line2: "you've already seen.",
     subhead:
-      "Ve runs quietly in the background, watching what you work on, recalling what you've seen, so you never lose anything again.",
-    cta: "Get Ve Free",
+      "Ve watches what you work on, silently, privately, so you can search your entire screen history in plain language. No folders. No filenames. Just ask.",
+    cta: "Download Ve Free",
     ctaLink: "#download",
     trustChips: ["No credit card", "Mac app", "Free forever"],
-    privacyLine: "Ve never records video. Your screen stays private.",
-  },
-  features: {
-    eyebrow: "Better recall. Better work.",
-    subhead: "Ve learns from everything on your screen, so you can find anything and pick up exactly where you left off.",
-    cards: [
-      {
-        title: "Recall everything you've seen",
-        body: "Find anything in seconds. That tab you closed. That number you scrolled past. That message you half-read. Ve already has it.",
-        icon: "eye" as const,
-      },
-      {
-        title: "See how it all connects",
-        body: "Ve understands how a Slack thread, a doc you edited, and a screen you opened all point to the same thing.",
-        icon: "connections" as const,
-      },
-      {
-        title: "Search without searching",
-        body: 'No folders. No filenames. Just ask, "what was that thing I saw Tuesday?" and Ve finds it instantly.',
-        icon: "search" as const,
-      },
-      {
-        title: "Never lose context again",
-        body: "Switch tasks, close tabs, finish calls. Ve holds your context so you don't have to.",
-        icon: "shield" as const,
-      },
-    ],
+    privacyLine: "Ve never records video. Your data never leaves your Mac.",
   },
   howItWorks: {
-    eyebrow: "How Ve works",
-    subhead: "Ve gets smarter every day, learning to stay one step ahead of your work.",
+    eyebrow: "How it works",
+    h2: "Ask. Ve finds it.",
     steps: [
       {
         number: 1,
-        title: "Starts working immediately",
-        body: "Ve runs quietly in the background across every app. No setup. No integrations needed.",
+        title: "Ve runs quietly in the background",
+        body: "No setup. No integrations. No files to organise. Ve starts working the moment you install it, across every app on your Mac.",
       },
       {
         number: 2,
-        title: "Ve gets to know your work",
-        body: "It builds a private memory, learns your patterns, and connects the dots, so it's always caught up.",
+        title: "Everything you see is searchable",
+        body: "Slack threads, PDFs, browser tabs, email, Zoom transcripts, Google Docs. If it appeared on your screen, Ve has it.",
       },
       {
         number: 3,
-        title: "You get more done",
-        body: "Ask Ve anything about your work. Get answers grounded in what you've actually seen and done, not generic AI guesses.",
+        title: "Search in plain language",
+        body: '"What was that pricing number from the call on Monday?" "Find that article about Series A benchmarks I had open yesterday." Ve finds it. In seconds.',
       },
     ],
   },
   finalCta: {
     h2: "Stop losing things you've already seen.",
-    cta: "Get Ve Free",
+    subhead: "Ve runs quietly, remembers everything, and finds it in seconds. Free forever. Mac app. No credit card.",
+    cta: "Download Ve Free",
     ctaLink: "#download",
-    sub: "",
   },
 };

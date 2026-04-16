@@ -1,9 +1,12 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { FeatureCards } from "@/components/sections/FeatureCards";
-import { VeAttention } from "@/components/sections/VeAttention";
+import { ProofBar } from "@/components/sections/ProofBar";
+import { ProblemSection } from "@/components/sections/ProblemSection";
 import { HowItWorks } from "@/components/sections/HowItWorks";
+import { Outcomes } from "@/components/sections/Outcomes";
+import { VeAttention } from "@/components/sections/VeAttention";
 import { Privacy } from "@/components/sections/Privacy";
+import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 
@@ -16,10 +19,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <FeatureCards />
-        <VeAttention />
+        <ProofBar />
+        <ProblemSection />
         <HowItWorks />
+        <Outcomes />
+        <VeAttention />
         <Privacy />
+        <FAQ />
         <FinalCTA />
       </main>
       <div className="bg-chartreuse">

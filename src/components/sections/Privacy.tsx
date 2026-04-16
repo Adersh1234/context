@@ -4,80 +4,51 @@ import { m, LazyMotion, domAnimation } from "framer-motion";
 import { FadeInView } from "@/components/motion/FadeInView";
 import { StaggerChildren, staggerItem } from "@/components/motion/StaggerChildren";
 
-const cards = [
+const points = [
   {
-    title: "CASA Tier 2",
-    body: "With CASA Tier 2 compliance and industry-leading encryption, your emails stay private, secure, and protected always.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2L4 6.5v5.5c0 5.25 3.4 10.15 8 11.5 4.6-1.35 8-6.25 8-11.5V6.5L12 2z" stroke="#299FD2" strokeWidth="1.5" fill="none" />
-        <circle cx="12" cy="12" r="3" stroke="#299FD2" strokeWidth="1.5" />
-        <path d="M12 9v1.5" stroke="#299FD2" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
+    title: "Processed, not stored permanently",
+    text: "Ve uses your screen data to power search, then discards it. It's not sitting in a database indefinitely.",
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6.5v5.5c0 5.25 3.4 10.15 8 11.5 4.6-1.35 8-6.25 8-11.5V6.5L12 2z" stroke="#299FD2" strokeWidth="1.5" /><path d="M9 12l2 2 4-4" stroke="#299FD2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>,
   },
   {
-    title: "Encrypted End-To-End",
-    body: "All data is encrypted using modern cryptographic standards in transit and at rest, ensuring secure communication without human access.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <rect x="5" y="11" width="14" height="10" rx="2" stroke="#299FD2" strokeWidth="1.5" />
-        <path d="M8 11V8a4 4 0 118 0v3" stroke="#299FD2" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="12" cy="16" r="1.5" fill="#299FD2" />
-      </svg>
-    ),
+    title: "Never used to train AI models",
+    text: "Your data works for you, not for us. Nothing you see on your screen improves anyone else's product.",
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#299FD2" strokeWidth="1.5" /><path d="M4 4l16 16" stroke="#299FD2" strokeWidth="1.5" strokeLinecap="round" /></svg>,
   },
   {
-    title: "No Training On Your Data",
-    body: "Your interactions are excluded from model training and analytics. We don't learn from your data your AI works only for you.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <rect x="5" y="3" width="14" height="5" rx="1.5" stroke="#299FD2" strokeWidth="1.5" />
-        <rect x="5" y="10" width="14" height="5" rx="1.5" stroke="#299FD2" strokeWidth="1.5" />
-        <rect x="5" y="17" width="14" height="5" rx="1.5" stroke="#299FD2" strokeWidth="1.5" />
-        <circle cx="8" cy="5.5" r="1" fill="#299FD2" />
-        <circle cx="8" cy="12.5" r="1" fill="#299FD2" />
-        <circle cx="8" cy="19.5" r="1" fill="#299FD2" />
-      </svg>
-    ),
+    title: "CASA Tier 2 certified",
+    text: "Independent verification that Ve meets enterprise-grade security standards for how your data is handled in transit and at rest.",
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="#299FD2" strokeWidth="1.5" /><path d="M8 22h8M12 18v4" stroke="#299FD2" strokeWidth="1.5" strokeLinecap="round" /><path d="M9 11l2 2 4-4" stroke="#299FD2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>,
   },
 ];
 
 export function Privacy() {
   return (
     <LazyMotion features={domAnimation}>
-      <section id="privacy" aria-labelledby="privacy-heading" className="bg-[#111215] text-white px-5 py-20 md:py-28 lg:py-36">
-        <div className="mx-auto max-w-6xl">
+      <section id="privacy" className="bg-dark text-white px-5 py-16 md:py-24 lg:py-32">
+        <div className="mx-auto max-w-5xl">
           <FadeInView>
-            <h2 id="privacy-heading" className="text-h2 text-white max-w-4xl uppercase font-extrabold leading-[1.05]">
-              Privacy isn&apos;t a feature in Ve.
-              <br />
-              It&apos;s the foundation.
-            </h2>
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-h2 text-white">Your screen data is handled with the care it deserves.</h2>
+              <p className="mt-5 text-lg text-text-muted leading-relaxed max-w-2xl mx-auto">
+                Ve is CASA Tier 2 certified, one of the most rigorous independent security standards for cloud applications.
+              </p>
+            </div>
           </FadeInView>
-
-          <StaggerChildren className="mt-14 grid gap-5 md:grid-cols-3" stagger={0.1}>
-            {cards.map((card) => (
-              <m.div
-                key={card.title}
-                variants={staggerItem}
-                className="group rounded-2xl bg-[#1a1d24] border border-white/[0.06] p-8 flex flex-col justify-end min-h-[260px] transition-all duration-300 hover:border-cyan/20"
-              >
-                {/* Icon */}
-                <div className="mb-auto">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-cyan/10 border border-cyan/10">
-                    {card.icon}
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="mt-6">
-                  <h3 className="text-lg font-semibold text-cyan">{card.title}</h3>
-                  <p className="mt-2 text-sm text-white/50 leading-relaxed">{card.body}</p>
-                </div>
+          <StaggerChildren className="mt-14 grid gap-6 md:grid-cols-3" stagger={0.1}>
+            {points.map((point) => (
+              <m.div key={point.title} variants={staggerItem} className="group rounded-2xl bg-dark-card border border-dark-border p-7 transition-all duration-300 hover:border-dark-border-hover">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-cyan/10 mb-5">{point.icon}</div>
+                <h3 className="text-base font-semibold text-cyan mb-2">{point.title}</h3>
+                <p className="text-text-muted text-sm leading-relaxed">{point.text}</p>
               </m.div>
             ))}
           </StaggerChildren>
+          <FadeInView delay={0.3}>
+            <p className="mt-14 text-center text-lg font-medium text-cyan">
+              No selling your data. No human browsing your screen. No permanent storage.
+            </p>
+          </FadeInView>
         </div>
       </section>
     </LazyMotion>

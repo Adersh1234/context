@@ -3,8 +3,8 @@
 @theme inline {
   --color-chartreuse: #F1FF0A;
   --color-chartreuse-dim: #d9e609;
-  --color-dark: #0A1A1A;
-  --color-dark-card: #0F2424;
+  --color-dark: #000000;
+  --color-dark-card: #0a0a0a;
   --color-dark-border: rgba(41, 159, 210, 0.15);
   --color-dark-border-hover: rgba(41, 159, 210, 0.4);
   --color-cyan: #299FD2;
@@ -18,22 +18,24 @@ html { scroll-behavior: smooth; }
 
 body {
   background: var(--color-dark);
+  background-image: radial-gradient(ellipse at 50% 0%, rgba(41, 159, 210, 0.04) 0%, transparent 60%),
+                    radial-gradient(ellipse at 80% 50%, rgba(41, 159, 210, 0.02) 0%, transparent 50%),
+                    radial-gradient(ellipse at 20% 80%, rgba(41, 159, 210, 0.02) 0%, transparent 50%);
   color: var(--color-text-on-dark);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Heading styles — uppercase, bold, italic like ve.ai ── */
 .text-hero {
-  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  font-size: clamp(2.25rem, 6vw, 5.5rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   font-weight: 700;
 }
 
 .text-h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.75rem, 4vw, 3.5rem);
   line-height: 1.1;
   letter-spacing: -0.015em;
   font-weight: 700;
